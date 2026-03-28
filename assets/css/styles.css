@@ -24,14 +24,14 @@ html {
 body {
   background: var(--cream);
   color: var(--ink);
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   cursor: crosshair;
   overflow-x: hidden;
 }
 
 /* ─── GRAIN MIXIN ────────────────────────────── */
 .grainy::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
@@ -55,7 +55,7 @@ nav {
   backdrop-filter: blur(6px);
 }
 .nav-logo {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: -0.02em;
@@ -84,13 +84,16 @@ nav {
   color: var(--cream);
   border: 2px solid var(--ink);
   padding: 0.5rem 1.2rem;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   cursor: crosshair;
   letter-spacing: 0.08em;
-  transition: background 0.15s, color 0.15s, transform 0.12s;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    transform 0.12s;
 }
 .nav-cta:hover {
   background: var(--clay);
@@ -172,7 +175,7 @@ nav {
   background: var(--yellow);
 }
 .hero h1 {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: clamp(3.5rem, 10vw, 9rem);
   font-weight: 900;
   line-height: 0.9;
@@ -211,14 +214,16 @@ nav {
   color: #fff;
   border: 3px solid var(--ink);
   padding: 0.8rem 2rem;
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   cursor: crosshair;
   box-shadow: 5px 5px 0 var(--ink);
-  transition: transform 0.12s, box-shadow 0.12s;
+  transition:
+    transform 0.12s,
+    box-shadow 0.12s;
   text-decoration: none;
   display: inline-block;
 }
@@ -231,14 +236,17 @@ nav {
   color: var(--ink);
   border: 3px solid var(--ink);
   padding: 0.8rem 2rem;
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   cursor: crosshair;
   box-shadow: 5px 5px 0 var(--ink);
-  transition: transform 0.12s, box-shadow 0.12s, background 0.12s;
+  transition:
+    transform 0.12s,
+    box-shadow 0.12s,
+    background 0.12s;
   text-decoration: none;
   display: inline-block;
 }
@@ -254,7 +262,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: clamp(8rem, 22vw, 20rem);
   font-weight: 900;
   white-space: nowrap;
@@ -283,7 +291,7 @@ nav {
   animation: ticker-scroll 25s linear infinite;
 }
 .ticker-item {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -325,7 +333,7 @@ nav {
   margin-bottom: 0.5rem;
 }
 .section-title {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 900;
   line-height: 1;
@@ -349,7 +357,9 @@ nav {
   position: relative;
   overflow: hidden;
   cursor: crosshair;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
 }
 .class-card:hover {
   transform: translate(-3px, -3px);
@@ -391,7 +401,7 @@ nav {
   margin-bottom: 1rem;
 }
 .class-name {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 1.2rem;
   font-weight: 900;
   line-height: 1.1;
@@ -412,7 +422,7 @@ nav {
   gap: 0.5rem;
 }
 .class-price {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 1.1rem;
   font-weight: 900;
 }
@@ -447,7 +457,7 @@ nav {
   position: absolute;
   bottom: 1.5rem;
   right: 2.5rem;
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -522,7 +532,7 @@ nav {
   border-color: var(--pink);
 }
 .stat-num {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 3rem;
   font-weight: 900;
   line-height: 1;
@@ -576,7 +586,7 @@ nav {
   border: 3px solid var(--ink);
   border-right: none;
   padding: 1rem 1.4rem;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 0.85rem;
   background: #fff;
   outline: none;
@@ -590,14 +600,17 @@ nav {
   color: var(--cream);
   border: 3px solid var(--ink);
   padding: 1rem 2rem;
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   cursor: crosshair;
   box-shadow: 5px 5px 0 var(--mud);
-  transition: transform 0.12s, box-shadow 0.12s, background 0.15s;
+  transition:
+    transform 0.12s,
+    box-shadow 0.12s,
+    background 0.15s;
 }
 .subscribe-form button:hover {
   transform: translate(-3px, -3px);
@@ -628,7 +641,7 @@ nav {
 }
 .success-msg {
   display: none;
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 1.2rem;
   font-weight: 900;
   padding: 1.5rem;
@@ -671,7 +684,7 @@ footer {
   max-width: 280px;
 }
 .footer-col h4 {
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -686,7 +699,9 @@ footer {
   font-size: 0.75rem;
   opacity: 0.75;
   margin-bottom: 0.6rem;
-  transition: opacity 0.15s, color 0.15s;
+  transition:
+    opacity 0.15s,
+    color 0.15s;
 }
 .footer-col a:hover {
   opacity: 1;
@@ -713,14 +728,16 @@ footer {
   color: #fff;
   border: 2px solid var(--clay);
   padding: 0.5rem 1.2rem;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 0.65rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   box-shadow: 3px 3px 0 rgba(255, 255, 255, 0.2);
-  transition: transform 0.12s, box-shadow 0.12s;
+  transition:
+    transform 0.12s,
+    box-shadow 0.12s;
 }
 .codepen-link:hover {
   transform: translate(-2px, -2px);
