@@ -32,6 +32,13 @@ body {
   overflow-x: hidden;
 }
 
+.secondary-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 /* ─── GRAIN MIXIN ────────────────────────────── */
 .grainy::after {
   content: '';
