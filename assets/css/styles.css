@@ -11,6 +11,7 @@
   --lavender: #9b7e6e;
   --ink: #1a1a1a;
   --mud: #7a5c44;
+  --secondary-font: 'Oswald', sans-serif;
 }
 
 /* ─── RESET ──────────────────────────────────── */
@@ -30,13 +31,6 @@ body {
   font-family: 'Space Mono', monospace;
   cursor: crosshair;
   overflow-x: hidden;
-}
-
-.secondary-font {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 
 /* ─── GRAIN MIXIN ────────────────────────────── */
